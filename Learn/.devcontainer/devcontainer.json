@@ -5,9 +5,7 @@
     "vscode": {
       "extensions": [
         "rust-lang.rust-analyzer",
-        "vadimcn.vscode-lldb",
-        "serayuzgur.crates",
-        "tamasfe.even-better-toml"
+        "vadimcn.vscode-lldb"
       ]
     }
   },
