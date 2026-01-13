@@ -1,0 +1,15 @@
+{
+  "name": "Rust Dev Container",
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "serayuzgur.crates",
+        "tamasfe.even-better-toml"
+      ]
+    }
+  },
+  "postCreateCommand": "rustup component add rustfmt clippy && cargo build || true"
+}

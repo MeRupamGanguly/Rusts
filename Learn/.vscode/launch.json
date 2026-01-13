@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug my-rust-app",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/my-rust-app/target/debug/my-rust-app",
+      "cwd": "${workspaceFolder}/my-rust-app",
+      "preLaunchTask": "cargo build"
+    }
+  ]
+}
