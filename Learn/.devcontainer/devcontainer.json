@@ -1,6 +1,8 @@
 {
   "name": "Rust Dev Container",
-  "build": { "dockerfile": "Dockerfile" },
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -9,5 +11,5 @@
       ]
     }
   },
-  "postCreateCommand": "rustup component add rustfmt clippy && cargo build || true"
+  "postCreateCommand": "rustup component add rustfmt clippy && cd my-rust-app && cargo build || true"
 }
